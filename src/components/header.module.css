@@ -1,0 +1,24 @@
+.container {
+  background-color: black;
+  color: white;
+  padding-bottom: .5vh;
+}
+nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  margin: 3vh; 
+  
+}
+
+.link {
+  color: white;
+}

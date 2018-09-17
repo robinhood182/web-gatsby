@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby'
+import headerStyles from "./header.module.css"
+console.log(headerStyles)
+
 
 
 class Header extends Component {
@@ -13,13 +16,13 @@ class Header extends Component {
 
     const { headerText } = this.props;
     return (
-      <div>
+      <div className={headerStyles.container}>
         <nav>
-            <h4><Link to="/">Home</Link></h4>
-            <h4><Link to="/about">About</Link></h4>
-            <h4><Link to="/work">Work</Link></h4>
-            <h4><Link to="/skills">Skills</Link></h4>
-            <h4><Link to="/contact">Contact</Link></h4>
+            <Link className={headerStyles.link} to="/">Home</Link>
+            <Link className={headerStyles.link} to="/about">About</Link>
+            <Link className={headerStyles.link} to="/work">Work</Link>
+            <Link className={headerStyles.link} to="/skills">Skills</Link>
+            <Link className={headerStyles.link} to="/contact">Contact</Link>
         </nav>
         <h1>{headerText}</h1>
       </div>
